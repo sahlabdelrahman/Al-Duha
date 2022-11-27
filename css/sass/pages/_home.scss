@@ -1,0 +1,171 @@
+/**
+ * /* Start main
+ *
+ * @format
+ */
+
+main {
+  /* Start Features Area */
+  .features-area {
+    padding-top: $sPadding;
+    padding-bottom: 10px;
+    background-color: #f4f9fb;
+    .content {
+      .feature {
+        margin-bottom: 185px;
+        .img-container {
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .details {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80%;
+            padding: 5px;
+            background-color: #fff;
+            text-align: center;
+            width: 95%;
+            height: 180px;
+            box-shadow: 0px 0px 14px #1c9db840;
+            border-radius: 5px;
+            margin: auto;
+            border-bottom: 4px solid #3685b5;
+            p {
+              color: $mainColor;
+              font-size: 12px;
+              font-weight: 600;
+              line-height: 1.5;
+            }
+            .feature-title {
+              margin-top: 0;
+              font-size: 15px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* End Features Area */
+
+  /* Start Questions Area */
+  .questions-area {
+    padding-top: $sPadding;
+    padding-bottom: $sPadding;
+
+    .collapsible {
+      li {
+        .collapsible-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 600;
+
+          span:first-child {
+            display: inline-block;
+            width: calc(100% - 40px);
+            margin-left: 3px;
+          }
+
+          span:last-child {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #f3f4f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+              content: "\f078";
+              font-family: "Font Awesome 5 Free";
+              display: inline-block;
+              color: #031d28;
+            }
+          }
+        }
+
+        .collapsible-body {
+          span {
+            color: #00224f;
+            font-size: 15px;
+          }
+        }
+
+        &.active {
+          .collapsible-header {
+            background-color: #1c9db8;
+            color: #fff;
+            span {
+              &::before {
+                content: "\f077";
+                color: #031d28;
+              }
+            }
+          }
+
+          .collapsible-body {
+            border-left: 1px solid #1c9db8;
+            border-bottom: 1px solid #1c9db8;
+            border-right: 1px solid #1c9db8;
+          }
+        }
+      }
+    }
+  }
+  /* End Questions Area */
+
+  /* Start Contact Area */
+  .contact {
+    padding-bottom: 50px;
+    i {
+      margin-left: 5px;
+    }
+    .name {
+      display: inline-block;
+      width: 85px;
+    }
+    .number {
+      margin-right: 10px;
+    }
+    .social-icons {
+      a {
+        display: inline-block;
+        margin: 15px 5px;
+
+        i {
+          color: rgba(0, 0, 0, 0.87);
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  /* End Contact Area */
+}
+/* End main */
+
+/* Start Scroll Button */
+
+#scroll-top {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: $mainColor;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 800px;
+  box-shadow: 0px 3px 6px #ffffff7a;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 9998;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+/* End Scroll Button */

@@ -1,0 +1,109 @@
+/**
+ * /* Start Header
+ *
+ * @format
+ */
+
+header {
+  .navbar-fixed {
+    height: 100px;
+    nav {
+      .container {
+        width: 90%;
+        height: 100%;
+      }
+      background-color: #fff;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      .nav-wrapper {
+        display: grid;
+        align-items: center;
+        .brand-logo {
+          height: 100px;
+          img {
+            width: 100px;
+          }
+        }
+        .sidenav-trigger {
+          i {
+            color: $mainColor;
+          }
+        }
+        ul {
+          li {
+            a {
+              position: relative;
+              color: #2d3766;
+              font-size: 16px;
+              font-weight: bold;
+              @include prefixer(transition, all 0.3s, webkit moz o ms);
+              &::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 15px;
+                width: 0;
+                height: 4px;
+                background: transparent;
+                @include prefixer(transition, all 0.3s, webkit moz o ms);
+              }
+              &:hover {
+                color: #3685b5;
+                background: transparent !important;
+                &::before {
+                  background: #3685b5;
+                  width: 37px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidenav {
+    li {
+      a {
+        color: #2d3766;
+        font-weight: bold;
+        @include prefixer(transition, all 0.3s, webkit moz o ms);
+        &:hover {
+          color: #3685b5;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .nav-wrapper {
+      .brand-logo {
+        right: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .nav-wrapper {
+      .brand-logo {
+        img {
+          width: 90px !important;
+          margin-top: 6px;
+        }
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End Header */
