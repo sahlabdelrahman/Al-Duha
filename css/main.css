@@ -12,11 +12,17 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Cairo", sans-serif;
 }
 
-p, a {
+p,
+a {
   font-family: "Cairo", sans-serif;
 }
 
@@ -27,16 +33,16 @@ p, a {
 
 /* Disable zoom in in mobile */
 @media (max-width: 767px) {
-  input[type=date],
-  input[type=datetime],
-  input[type=email],
-  input[type=number],
-  input[type=password],
-  input[type=search],
-  input[type=tel],
-  input[type=text],
-  input[type=time],
-  input[type=url],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
   select:focus,
   textarea {
     font-size: 16px !important;
@@ -143,7 +149,11 @@ header .sidenav li a:hover {
  */
 .banner-area {
   position: relative;
-  background-image: linear-gradient(to right, rgba(184, 28, 93, 0.85), rgba(28, 111, 128, 0.85));
+  background-image: linear-gradient(
+    to right,
+    rgba(184, 28, 93, 0.85),
+    rgba(28, 111, 128, 0.85)
+  );
   background-size: cover;
 }
 .banner-area .container {
@@ -339,7 +349,12 @@ main .questions-area .collapsible li .collapsible-header span:last-child {
   justify-content: center;
   align-items: center;
 }
-main .questions-area .collapsible li .collapsible-header span:last-child::before {
+main
+  .questions-area
+  .collapsible
+  li
+  .collapsible-header
+  span:last-child::before {
   content: "\f078";
   font-family: "Font Awesome 5 Free";
   display: inline-block;
@@ -370,7 +385,7 @@ main .contact i {
 }
 main .contact .name {
   display: inline-block;
-  width: 85px;
+  width: 100px;
 }
 main .contact .number {
   margin-right: 10px;
@@ -436,7 +451,7 @@ footer .footer-icons a i {
 }
 footer .footer-icons a:hover i {
   background-color: #222;
-  color: #FFF;
+  color: #fff;
 }
 footer .copyrights span {
   font-size: 14px;
